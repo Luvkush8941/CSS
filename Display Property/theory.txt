@@ -1,0 +1,23 @@
+Layout : 
+
+How elements are being positioned on a webpage.
+
+
+
+Normal Flow : 
+
+Elements positioned by the browser by default and i.e the normal flow.
+
+Jaise kii pehle heading ayega fir article fir uske andarr ul ayengye
+
+
+Display : property helps us in creating and changing the layout and alter normal flow.
+
+
+
+
+                                                   Display
+                                                      |
+    ----------------------------------------------------------------------------------------------------------------
+    |                                 |                                        |     |
+    Inline                          Block                             inlineblock                          None 

@@ -1,0 +1,36 @@
+Modern Computers uses :-    24 bit color coding
+
+                                 24 bit contains 3 channels
+                                          |
+                            ----------------------------
+                            |             |            |
+                           Red           Green        Blue
+                          (8 bit)       (8 bit)      (8 bit)
+                            |              |           | 
+                           256            256         256
+                        combinations    combinations  combinations / shades
+                            as 
+                         2^8 = 256  
+
+(256 shades of red)  X (256 shades of Green)  X (256 shades of Blue) = 16 Million Shades    
+
+So, we have 16 Million different colors and this is only possible because of 24 bit color coding
+
+
+Ways to represent the colors :-
+
+1. Hexadecimal : It contains 3 channels
+
+Red (8 bit), Green (8 bit) and Blue (8 bit).
+
+Red vary from 00 to ff where ff means 16 
+Green vary from 00 to ff
+Blue vary from 00 to ff
+
+
+2. rgb
+3. rgba : a stands for alpha channel
+
+--------------------------------------------------------------------------------------------------------------------
+
+Important : Go to "Coolers.co" for different colors

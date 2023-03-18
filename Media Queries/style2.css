@@ -1,0 +1,73 @@
+section{
+
+    border: 1px solid #ccc;
+    width: 60vw;
+    margin: 50px auto;
+    padding: 16px;
+}
+
+
+/* Main jab screen ko chotta kar raha huun toh heading kaa kuch part next line main jaa raha hain
+   and we want our heading to remain on the same line.
+*/
+h1{
+
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+/* ------------------------------ Media Query ------------------------------- */
+
+
+
+/* Jaise hee screen kii width 800px ho waise hee h1 aur p red color ke ho jaaye and 
+unka font size let's say : 3rem ho jaaye.
+*/
+
+/* 
+   Jab dono condition true hogyi i.e media type : screen hogyi and
+   width : 800px hogyi then only this media query works.
+
+
+  */
+
+/* @media screen and (width:800px){
+
+    h1,p{
+
+        color: red;
+
+        font-size: 3rem;
+
+    }
+
+} */
+
+
+/* This media query works when the orientation becomes landscape. */
+@media screen and (orientation:landscape){
+
+    h1{
+
+        color:blue;
+        text-shadow: 1px 1px 2px rgb(104,104,104);
+        text-transform: uppercase;
+    }
+}
+
+
+/* to give more conditions we just separate them using "," */
+
+/* So, yaa fir toh orientation : portrait ho jaaye aur max-width:780 ho jaaye then this media query works. */
+@media screen and (orientation:portrait ), (max-width:780px){
+
+    h1{
+
+        color:purple;
+        text-shadow: 3px 3px 2px rgb(86, 10, 10);
+        text-transform: uppercase;
+    }
+
+}
+

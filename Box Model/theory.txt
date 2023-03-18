@@ -1,0 +1,12 @@
+It treats every Html element as a rectangular box.
+
+
+4 Properties of box model :-
+
+1. Dimensions : Height and Width
+
+2. Border 
+
+3. Margin
+
+4. Padding

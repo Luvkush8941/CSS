@@ -1,0 +1,50 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+    justify-content: center;
+
+    /* flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start; */
+
+}
+
+
+/* 
+
+If we want to align a particular element along the cross axis then we can do so with the help of 
+align-self.
+
+Other properties are applied on the parents like: justify-content , align-items etc.
+But, align-self is only applied to a single element.
+
+*/
+
+div:nth-of-type(3){
+
+    align-self: center;
+
+}

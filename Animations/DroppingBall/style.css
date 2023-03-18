@@ -1,0 +1,51 @@
+
+div{
+
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+
+    animation-name: gravity;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+
+}
+
+div img{
+
+    height: 100%;
+    width: 100%;
+
+    /* For rotating the image */
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+
+/* Defining the animation */
+@keyframes gravity{
+
+    100%{
+
+        transform: translateY(480px);
+
+    }
+
+}
+
+
+@keyframes rotate{
+
+
+    100%{
+
+        transform: rotateZ(360deg);
+    }
+}

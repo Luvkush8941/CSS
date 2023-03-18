@@ -1,0 +1,69 @@
+
+h1{
+
+    width: 70vw;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-top: 10px solid lightskyblue;
+    border-left: 10px solid lightsalmon;
+    border-right: 10px solid lightseagreen;
+    border-bottom: 10px solid lightslategrey;
+}
+
+p{
+
+    width: 70vw;
+    margin: 20px auto;
+
+    border-left: 10px solid gray;
+    padding-left: 16px;
+
+}
+
+
+div{
+
+    height: 200px;
+    width: 200px;
+    border: 8px solid black;
+    background-color: lightsalmon;
+    margin: 30px auto;
+
+    border-radius: 50px;
+
+}
+
+
+
+section{
+
+    height: 600px;
+    width: 700px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+
+    background-color: blueviolet;
+
+    background-image: url(https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    
+
+    /* To stop the repetation of the image */
+    background-repeat: no-repeat;
+    
+    /* Contain : Try to cover but image will not crop */
+    background-size: contain;
+
+    /* It will cover the whole container even image will crop */
+    /* background-size: cover; */
+     
+    /* Convert the image into black-in white */
+    filter: grayscale(100%);
+
+    filter: grayscale(80%);
+
+    
+
+}

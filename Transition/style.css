@@ -1,0 +1,79 @@
+/* 
+
+   div -----------------------------------------> div
+state-1          Abrupt change                   state-2 
+
+
+To make the abrupt change to smooth we use Transition
+
+*/
+
+
+/* ------------- Abrupt Changes -------------- */
+
+/* div{
+
+    border: 2px solid black;
+    background-color: palevioletred;
+
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+div:hover{
+
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+
+
+/* ---------------- Applying Transition ------------------ */
+
+div{
+
+    border: 2px solid black;
+    background-color: palevioletred;
+
+    height: 200px;
+    width: 200px;
+    
+    /* Now square changes into circle in 2s i.e smooth change */
+    transition: 2s;
+
+    /* Currently transition is occuring on all the other properties i.e border , color ,.. etc */
+
+    /* So, applying on the specific property but other property changes abruptly i.e background color*/
+    /* transition-property: border-radius; */
+    
+    /* Now, color also changes smoothly */
+    /* transition-property: border-radius , background-color; */
+    
+
+    /* All the properties smoothly changes. */
+    transition-property: all;
+
+    /* Specifies how long the transition from the old value to the new value should take*/
+    transition-duration: 2s;
+    
+    /* So, transition will start after the delay of 3s */
+    transition-delay: 3s;
+
+    /* Applying shorthand-property : transition : transition-property  transition-duration  transition-delay*/
+
+    transition: all 2s 1s;
+}
+
+
+/* Now hovering changes smoothly as we had also applied transition */
+div:hover{
+
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+

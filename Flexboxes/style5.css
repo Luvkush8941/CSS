@@ -1,0 +1,60 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 350px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    /* After decreasing the size of the screen you can see that the content is wrapping. But, a space is also created in 2nd row or between the 1st row content and the wrapped content.
+    So, to remove this we use :
+    
+    align-content
+
+    */
+    
+    /* Now the wrapped content and the 1st row content are aligned on the flex-end onto the cross axis.  */
+    align-content: flex-start;
+
+    align-content: flex-end;
+
+    align-content: center;
+    
+    /* 
+    Upar se agar 10px lega div-1 and neeche se bhi 10px lega.
+    Similarly, wrapped content bhi upar se 10px lega aur neeche se bhi then,
+    a space of 20px is created in between the wrapped content and the 1st row content.
+    
+    
+    */
+    align-content: space-around;
+    
+
+    /* Space between the borders will removed and the only space left is between 1st row and the wrapped content. */
+    align-content: space-between;
+
+
+
+}

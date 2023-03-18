@@ -1,0 +1,104 @@
+section{
+
+    border: 1px solid #ccc;
+    width: 60vw;
+    margin: 50px auto;
+    padding: 16px;
+}
+
+
+/* Main jab screen ko chotta kar raha huun toh heading kaa kuch part next line main jaa raha hain
+   and we want our heading to remain on the same line.
+*/
+h1{
+
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+/* ------------------------------ Media Query ------------------------------- */
+
+
+
+/* Jaise hee screen kii width 800px ho waise hee h1 aur p red color ke ho jaaye and 
+unka font size let's say : 3rem ho jaaye.
+*/
+
+/* 
+   Jab dono condition true hogyi i.e media type : screen hogyi and
+   width : 800px hogyi then only this media query works.
+
+
+  */
+
+/* @media screen and (width:800px){
+
+    h1,p{
+
+        color: red;
+
+        font-size: 3rem;
+
+    }
+
+    
+} */
+
+/* Below 800px this media query would fail. */
+
+/* And i want this media query should work from width : 0px to width : 800px 
+   
+   Max-width : 800px
+*/
+
+
+/* Works when width <= 800px */
+@media screen and (max-width:800px){
+
+    h1{
+
+        color: red;
+
+        font-size: 3rem;
+
+    }
+
+    
+}
+
+/* But when width becomes 575 then also our heading breaks i.e we have to write another media query. */
+
+/* So, 575 is the max width and minimum can be anything. */
+
+/* Works when width <= 580px */
+@media screen and (max-width:580px){
+
+     h1{
+
+        color: green;
+        border: 1px solid red;
+        font-size: 2rem;
+     }
+}
+
+
+/* Our above 2 media queries again failed at width = 386.
+
+   So, write another media query for that.
+
+   Hme pata hain kii abb 386 se chotti width kii toh koi screen hogyi nhi hogyi toh woh bhi 250px tak iss query se handle ho jaayegyi. So, this gonna be the last media query for this particular heading.
+
+*/
+
+
+@media screen and (max-width : 390){
+
+    h1{
+
+        color: purple;
+        border: 1px solid green;
+        font-size: 1.5rem;
+     }
+}
+

@@ -1,0 +1,166 @@
+div{
+    
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 3px solid black ;
+}
+
+/* 
+                      Hover
+        Box    --------------------> Box     [Now box is in Hover state]
+       (State1)                     (State2)
+
+  
+       Agar mujhe hover state main kuch styling karni hain toh mai Pseudo classes kaa use karunga.
+
+       After removing the hover box waapis apni real state par aa jaata hain
+
+*/
+
+
+/* Now div is in hover state and we are applying the pseudo classes. */
+div:hover{
+
+     border-radius: 50%;
+     background-color: lightgreen;
+
+}
+
+
+
+/* ------------------ Applying another pseudo classes ----------------------- */
+
+/* 1. i.e active class i.e when it will be clicked */
+
+h1:active{
+
+    background-color: lightgreen;
+    border: 3px solid black;
+}
+
+/* 2. Jab bhi main  input box main kuch likhne jaa raha hota huun toh woh focus state  main chala jaata hain*/
+
+input:focus{
+
+    background-color: cornflowerblue;
+
+}
+
+/* 3. Visited links */
+
+ul a:visited{
+
+    color: green;
+
+}
+
+/* 4. Unvisited links */
+
+ul a:link{
+
+    color: red;
+}
+
+
+
+/* ------------------- Tree-structure Pseudo Classes ---------------------------- */
+
+ol li:first-child{
+
+    color: red;
+}
+
+ol li:last-child{
+
+    background-color: aqua;
+
+}
+
+ol li:nth-of-type(5){
+
+    border:3px solid green;
+    background-color: lightpink;
+}
+
+ol li:nth-of-type(14){
+
+    border:3px solid red;
+    background-color: lightgreen;
+}
+
+/* ol li:nth-of-type(even){
+
+    font-weight: bold;
+}
+
+ol li:nth-of-type(odd){
+
+    background-color: palegoldenrod;
+
+} */
+
+
+
+/* -------------- Pattern type ------------------- */
+/* Here in (An + B) -->
+
+A is interval
+B is offset (hame kaha se start karna hain)
+
+*/
+
+/* 2n + 3 means
+
+Starting from 3rd li we have to repeat the property after 2 li's
+
+*/
+ol li:nth-of-type(2n + 3){  
+
+    background-color: palegreen;
+    
+}
+
+
+
+/* Combining Pseudo classes */
+
+li:active:nth-of-type(10){
+
+    background-color: blueviolet;
+    
+}
+
+
+/* Before and after pseudo classes */
+
+h1::after{
+
+    content: "This is from CSS";
+    border: 1px dashed black;
+    background-color: burlywood;
+}
+
+h1::before{
+
+    content: "\2665";
+}
+
+
+ul li::before{
+
+    content: "\260E";
+}
+
+#special::first-letter{
+
+    font-size: 100px;
+    color: green;
+
+}
+
+/* Jab ham link ko click karengye tab tak ke liye woh red rahega firse woh normal color ho jaayega */
+ol a:active{
+
+    color: mediumvioletred;
+}

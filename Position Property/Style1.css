@@ -1,0 +1,95 @@
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+
+/* Giving static position to the div having id = "middle" in the section having having id = "static"  */
+#static #middle{
+
+    position: static;
+
+    /* Giving offset */
+
+    /* And no offset is working on this static section */
+    top: 100px;
+    left: 150px;
+    right:100px;
+    bottom: 100px;
+
+}
+
+#relative #middle{
+
+    position: relative;
+
+    /* Giving offset */
+
+    /* Note all the offsets are working w.r.t the initial position */
+
+    /* And all the offset is working on this relative div */
+    top: 100px;
+    left: 150px;
+    right:100px;
+    bottom: 100px;
+
+}
+
+/* After position : absolute
+
+   third div was overlapped on the middle div
+   
+   i.e we are unable to see the middle div
+
+   to see that give the offset values
+
+*/
+
+
+/* Jab position absolute hoti hain toh element normal flow se bahaar nikal jaata hain */
+/* It takes position relative to it's parent which was recently positioned */
+
+
+/* 
+
+So, middle div kaa parent 3rd section hain aur usse koi position nhi mili toh abb
+woh section ke parent ke paas jaayega i.e body.
+
+Hence this middle div is taking position relative to the body.
+
+let's say we give absolute a position and then middle div will take the position w.r.t that
+
+
+*/
+
+/* #absolute{
+
+    position: relative;
+    border: 1px solid black;
+    top:20px;
+    bottom: 40px;
+
+} */
+
+
+#absolute #middle{
+
+    position: absolute;
+    top:50px;
+    left:0px;
+
+}
+
+
+
+/* Flipkart kaa navbar fixed position se hee bana hain */
+#fixed #middle{
+
+    position: fixed;
+    top:10px;
+}
+
+

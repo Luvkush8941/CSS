@@ -1,0 +1,53 @@
+h1{
+
+    text-align: center;
+}
+
+
+section:nth-of-type(1){
+
+    width: 70vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+
+/* Applying the flexbox */
+
+section:nth-of-type(2){
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Now the section-2 becomes a flexbox */
+
+    /* On applying this now our section behaves as a flexbox. */
+    display: flex;
+
+    /* Now the main axis is from right-left. */
+    flex-direction: row-reverse;
+    
+    /* Now the main axis is from top-down. */
+    flex-direction: column;
+    
+    /* Now, the main axis is from bottom-top. */
+    flex-direction: column-reverse;
+}

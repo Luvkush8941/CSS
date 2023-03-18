@@ -1,0 +1,17 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    
+    border: 2px solid black;
+    margin: 0px 25%;
+}
+
+li{
+
+    list-style: none;
+}
+

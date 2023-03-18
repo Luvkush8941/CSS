@@ -1,0 +1,35 @@
+#one{
+
+    width: 350px;
+    height: 200px;
+   
+}
+
+
+#two{
+
+
+    width: 350px;
+    height: 200px;
+   
+    /* i.e image goes in left */
+    /* float: left; */
+    
+    /* i.e image goes in right */
+    float: right;
+
+}
+
+/* Now, agar main chahta huun sirf ek para aaye image ke bagal main bacha huua uske neeche aaye  */
+
+#three{
+    
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+
+#special{
+
+    clear: both;
+}

@@ -1,0 +1,31 @@
+
+Types of font in CSS:
+
+Font property is a shorthand property.
+
+1. Font-size
+
+2. Font-family
+
+3. Font-weight
+
+4. Font-Style
+
+5. Font-Variant
+
+6. Line-height
+
+7. Letter-spacing
+
+
+
+
+types of text-shadow :-
+
+1. x-offset : x direction main kitni shadow jaani chaiye
+
+2. y-offset : y direction main kitni shadow jaani chaiye. We can give positive and negative shadows.
+
+3. blurr-radius
+
+4. color

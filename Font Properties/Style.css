@@ -1,0 +1,66 @@
+section{
+
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 75%;
+    background-color: aquamarine;
+
+    /* To get the section in the middle right and left should be auto */
+    margin: 40px auto;
+}
+
+/* Use google fonts also */
+
+h1{
+
+    font-size: 50px;
+
+    /* With stroke font family is : serif
+    
+       and without it is : sans-serif
+    */
+
+    /* To remove the strokes */
+    /* font-family: sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* 100 is light and 700 is bold */
+    font-weight: 700;
+
+    font-style: italic;
+
+    font-variant: small-caps;
+
+    text-align: center;
+
+    background-color: aqua;
+
+    color: white;
+
+    /* text-shadow : x y blurr-radius  color*/
+
+    /* We  can give more shadows after this just after comma(,)
+      
+    ----> lists of shadows : 
+      i.e text-shadow: 5px 5px 2px red , 3px 3px 4px blue , .....;
+    */
+    text-shadow: 5px 5px 2px red;
+
+}
+
+section p{
+
+    /* font-size: 30px;
+    font-family: sans-serif; */
+
+    /* Parent kaa font-weight inherit kar lega */
+    /* font-weight: inherit;
+
+    line-height: 5rem; */
+
+    font: italic small-caps bold 16px/5 cursive;
+
+    letter-spacing: 0.1em;
+
+    
+}

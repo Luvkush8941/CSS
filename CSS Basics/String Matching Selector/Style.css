@@ -1,0 +1,24 @@
+
+/* --------------- Starts with -------------- */
+/* Select  anchor element whose href starts with http */
+a[href^="http"]{
+
+    color: red;
+}
+
+/* ------------- Ends with ------------- */
+
+a[href$="in"]{
+  
+    color: green;
+
+}
+
+/* ------------ Present Anywhere ------------- */
+
+a[href*="coding"]{
+
+    background-color: palevioletred;
+    
+}
+

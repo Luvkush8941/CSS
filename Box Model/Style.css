@@ -1,0 +1,69 @@
+p{
+
+    /* Dimensions - height and width */
+
+       width: 400px;
+
+    /* Border */
+
+       border: 2px solid green;
+    
+
+    /* -------------------------- Margin ----------------------------- */
+
+    /* Margin : is used to give space between two elements*/
+    /* So, 40px from right , bottom  , top and left margin will be given to the para after writing this */
+       
+    /* Margin is a shorthand property */
+       /* margin:  40px; */ 
+   
+       /* margin-top: 40px;
+       margin-right: 50px;
+       margin-bottom: 60px;
+       margin-left: 70px; */
+       
+       /* Margin works in the clockwise fashion
+       
+       margin: 40px 50px 60px 70px;
+
+       40px on top
+       50px on right
+       60px on bottom
+       70px on left
+       
+       */
+       /* margin: 40px 50px 60px 70px; */
+
+       
+       /* Here , margin: 40px 50px;
+       
+       40px represents : Top and Bottom
+       50px represents : left and right
+
+       */
+       /* margin: 40px 50px; */
+
+
+       /* Auto means div takes equal margin from both the sides */
+       /* auto only works for the left and right. It will not work for the top and bottom */
+       margin: 40px auto;
+
+       /* ------------------------- Padding ---------------------------- */
+
+    /* Padding : is used to give space between border and texts*/
+
+       /* padding: 50px; */
+
+       /* padding-top: 20px;
+       padding-right: 30px;
+       padding-bottom: 40px;
+       padding-left: 50px; */
+
+       /* Specifying padding in one line */
+
+       /* padding: 20px 30px 40px 50px; */
+
+        padding: 30px 40px ;
+
+
+}

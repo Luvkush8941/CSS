@@ -1,0 +1,101 @@
+
+/* 
+
+In transition only one state is changed but if we want multiple state changes so, we use animation for that.
+
+state1 ---> state2 ---> state3 ---> state4
+
+*/
+
+
+
+
+section{
+
+    height: 30px;
+    width: 300px;
+    border: 3px solid black;
+    background-color: palevioletred;
+    
+
+    /* Naming the animation */
+    animation-name: nikhil_slider;
+    animation-duration: 3s;
+
+    /* But we haven't define the animation that will happen if we use below line
+       for that we use @keyframe rules
+    */
+
+    /* Since animation works for 1 count so, so repeat it we use the below property */
+    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
+
+    animation-delay: 1s;
+    
+    /* abb animation 100% se 0% chalegyi */
+    animation-direction: reverse;
+    
+    /* start from 0% and go to 100% then 100% to 0% */
+    animation-direction: alternate;
+    
+    /* Last keyframe kii property section atain kar lega
+       i.e jab 4th keyframe (i.e at 100% here ) khatam hoga then uske baad section apni original position ke bajaaye last keyframe waali position le lega.
+    */
+    animation-fill-mode: forwards;
+    
+
+    /* First keyframes property will be retain by this */
+    animation-fill-mode: backwards;
+
+
+    animation-play-state: paused;
+    animation-play-state: running;
+
+    /* Shorthand property of animation */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+}
+
+
+/* Defining the animation to the nikhil_slider */
+@keyframes nikhil_slider{
+      
+     /* 1st keyframe */
+     /* When the animation completed 25% */
+      25%{
+
+        height: 300px;
+        background-color: lightgreen;
+
+      }
+       
+      /* 2nd keyframe */
+      /* When the animation completed 50% */
+      50%{
+
+        width: 200px;
+        height: 500px;
+        background-color: lightskyblue; 
+
+      }
+       
+      /* 3rd keyframe */
+      /* When the animation completed 75% */
+      75%{
+
+          width: 100px;
+          height: 600px;
+          background-color: lightgoldenrodyellow;
+      }
+      
+      /* 4th keyframe */
+      /* When the animation completed 100% */
+      100%{
+
+        width: 300px;
+        height: 700px;
+        background-color: lightpink;
+      }
+
+}

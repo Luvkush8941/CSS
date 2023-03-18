@@ -1,0 +1,58 @@
+h1{
+
+    text-align: center;
+    
+}
+
+
+
+
+
+/* #chat-box{
+
+
+    border: 2px solid #ccc;
+    padding: 16px;
+
+    ------>  To make the content at the center
+    margin: 30px auto;
+    width: 50vw;
+
+    ------>  Now, height of the section is 300px i.e content is now overflowing
+    height: 300px;
+    font-size: 24px;
+} 
+
+ */
+
+
+
+ /* Handling the overflowing */
+#chat-box{
+
+
+    border: 2px solid #ccc;
+    padding: 16px;
+
+    /* To make the content at the center */
+    margin: 30px auto;
+    width: 50vw;
+
+    /* Now, height of the section is 300px i.e content is now overflowing */
+    height: 300px;
+    font-size: 24px;
+
+    overflow-y:scroll;
+    
+}
+
+
+li{
+
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+

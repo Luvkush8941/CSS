@@ -1,0 +1,55 @@
+
+---> We have phones having device width of let's say : 480px.
+     Similarly, we have tablets having device width of let's say : 680px.
+     We have laptops having device width of let's say : 980px.
+     and, we have Big monitors having device width of let's say : > 1000px.
+
+So, user can open a particular application in the phone , tab , laptops and on some big screen.
+So, our content of that website should be responsive to that screen.
+
+It should automatically align or resize according to the screen.
+
+
+---> Media queries helps us to create responsive designs.
+
+Note : 
+
+1.  To write the Media query we have to write '@media' first.
+
+2.  Now, give the type of the media query.
+     
+    And we can give the type of media query. If give 'All' then it will run for all the devices.
+    If we write type : Screen ---> Then intended primarily for screens (mobile , laptops , bigscreens etc).
+    If we write type : print then it will work for printing machines.
+
+     @media screen
+
+3. After that we can give some conditions. Like:
+   
+   @media and (width:790px){
+
+    h1,p{
+
+        color : red;
+    }
+
+   }
+
+   i.e when the width of the screen becomes 790px then you have to make the heading and paragraph color as red. 
+
+
+
+---------------------------------------- Orientation --------------------------------------------------
+
+---> Hamaare device kii do tarah se orientation ho sakti hain :
+
+ 1. Portrait
+ 2. Landscape
+
+
+ Kuch device kii orientation change karne se bhi unke content par asar padtaa hain.
+ And this can also be handle by the media query.
+
+
+ Note : When ---> (Width > Height) then orientation is Landscape.
+        and When ---> (Height > Width) then orientation is Portrait.

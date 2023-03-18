@@ -1,0 +1,105 @@
+
+/* ------------------ Changing block level element to inline element ----------------------- */
+
+h1{
+
+    border: 2px solid red;
+    background-color: aqua;
+    display: inline;
+
+
+    /* Using box-model property */
+
+    height: 500px; /* Height is not working on inline element*/
+    width: 500px; /* Width is also not working on inline element*/
+
+    margin: 30px; /* Margin is working on this inline element*/
+    padding: 10px; /* Padding is also working */
+
+    /* 
+    
+    So, when the element has a display of inline then height and width will not be respected
+    whereas Margin and padding are respected.
+    
+    */
+
+}
+
+
+/* ---------------- Changing inline to block level --------------------*/
+
+span{
+
+    border: 2px solid blue;
+    background-color: palevioletred;
+    display: block;
+
+
+    /* Checking box-model property on block level*/
+
+    height: 100px; /* Height is working on block element*/
+    width: 400px; /* Width is also working on block element*/
+
+    margin: 30px; /* Margin is also working on this block element */
+    padding: 10px; /* Padding is also working */
+
+    /* 
+    
+    So, when the element has a display of block then all the box-model property are respected.
+    
+    */
+}
+
+
+
+/* -----------------------------Inline-block element ------------------------------- */
+
+/* Agar mujhe element par sabhi box-model property kaam karwaani hain aur saath hee
+
+   element inline bhi rahe toh main inline-block element kaa use karunga.
+
+   on h1 only 2 box-model properties are working when we had converted it into the inline element.
+*/
+
+
+/* We want our div's to be on the same line and all the box-model properties should also work. 
+
+   so, for that we will use inline-block element property.
+
+*/
+
+
+/* You can see that after display : inline 
+
+   height and width property donot works and it takes the width as required by the content.
+*/
+.one {
+
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    margin: 10px;
+    display: inline;
+    
+}
+
+
+/* All the box-model properties are respected and display is inline */
+.two{
+
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+
+
+/* --------------------------  None -------------------------------- */
+
+.three{
+
+    display: none;
+}

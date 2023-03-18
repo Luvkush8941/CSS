@@ -1,0 +1,10 @@
+
+---> Sometimes the content becomes so long that we donot read the whole.
+
+---> So, We can simply scroll the content if we want to read the whole.
+
+---> By using white-space : nowrap 
+
+---> we can make the content scrollable and content is overflowing.
+
+---> But, it is not good that user is scrolling the content.

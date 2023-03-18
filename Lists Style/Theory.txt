@@ -1,0 +1,11 @@
+
+List Style is a shorthand property.
+
+                                              list-Style
+                                                  |
+        ---------------------------------------------------------------------------------------------
+        |                                         |                                                 |
+List-style-type                          List-style-image                                    List-style-position
+
+
+So, list style is a shorthand property of these three properties.

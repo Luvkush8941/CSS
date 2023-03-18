@@ -1,0 +1,13 @@
+div{
+
+    border: 2px solid black;
+    width: 400px;
+    height: 150px;
+    background-color: palevioletred;
+
+    max-width: 1000px;
+
+    /* When min-width goes less than 700 then scroll waali cheez aa jaayengyi. */
+    min-width: 700px;
+
+}

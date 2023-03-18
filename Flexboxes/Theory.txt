@@ -1,0 +1,54 @@
+Using this we can create a responsive layout/design.
+
+It is a 1 dimensional layout. As flex-direction yaa fir toh main axis hogyi yaa fir cross axis.
+
+
+                                                                          
+                                                                          ---> display : flex
+                                                                          |
+                                                                          |
+ -------------------------------------------------------------------------------------------
+ |                                                                                          |
+
+                                  |
+                                  |
+                                  |
+                                  |
+                                  |
+                                  |
+     --------------------------------------------------------------------->  Main Axis                             
+                                  |                                         (left to right)
+                                  |
+                                  |
+                                  |
+                                  |
+                                  |
+                                  |                                                     --------> This is our
+                                  |                                                               Section
+                                  V
+
+                                Cross Axis  
+                                (top to bottom)
+
+
+|                                                                                          |
+--------------------------------------------------------------------------------------------
+
+
+Important :
+
+1. Jab ham " display : flex " karte hain toh simply sabhi elements main axis ke along align ho jaate hain.
+
+2. We can change the direction of the main axis by : 
+   flex-direction : row-reverse
+
+   So, now main axis is from right-left and cros-axis direction remains same.
+
+   and by default the flex-direction is row.
+
+3. If flex-direction : column then :
+   Main axis is from top-bottom and cross axis is from left-right.   
+
+
+
+Refer to CSS Tricks flexboxes.

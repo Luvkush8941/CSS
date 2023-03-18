@@ -1,0 +1,58 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+
+/* Applying the flexbox properties*/
+
+/* If we want to arrange the elements onto the main axis then we can use the property ::after
+
+   justify-content : start;
+
+   and start is the default justify-content
+
+*/
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+}
+
+
+/* 
+
+flex: <flex-grow>  <flex-shrink>  <flex-basis>
+
+
+*/
+
+div:nth-of-type(5){
+    
+
+    /* Shorthand for above three properties. */
+    flex: 2 4 250px;
+}

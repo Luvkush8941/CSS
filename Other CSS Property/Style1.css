@@ -1,0 +1,40 @@
+
+
+p{
+
+    white-space: nowrap;
+
+    /* Now, the overflowed content will be hidden */
+    overflow: hidden;
+
+
+    /* But, agar hame user ko bataana hain kii iske baad bhi kuch content hain. */
+    text-overflow: ellipsis;
+    
+}
+
+
+
+/* Jab ham para par hover karengye toh jo para hidden tha woh scrollable ho jaayega. */
+p:hover{
+
+    overflow: scroll;
+
+    /* clip means nothing and it is the default property. */
+    text-overflow: clip;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
+#Test{
+
+    white-space: nowrap;
+    overflow: scroll;
+    width: 70vw;
+    margin: 30px auto;
+}
+
+

@@ -1,0 +1,58 @@
+section{
+
+    border: 1px solid black;
+    width: 50vw;
+    margin: 40px auto;
+    font-size: 30px;
+
+}
+
+section ul{
+  
+  /* list-style-type: circle; */
+
+  /* Thums up sign */
+  /* list-style-type: "\1F44D"; */
+     
+
+   /* Using PineApple icon */
+  /* list-style-type: '\1F34D'; */
+
+  /* Try to give url of icons as images looks bigger in terms of lists-style */
+  /* list-style-image: url(Profile.jpeg); */
+  
+
+  /* This will scale up as the font-size of the text */
+  /* list-style-image: linear-gradient(to left bottom, red , blue); */
+
+  font-size: 40px;
+  padding: 30px;
+  
+  /* Now the icon are inside the border */
+  /* list-style-position: inside; */
+  
+
+  /* If we donot want the list-style */
+  list-style: none;
+  
+
+  /* Using shorthand Property */
+  /* And it is a combination of three properties :-
+  
+      1. list-style-type
+      2. list-style-image
+      3. list-style-position
+  
+  
+  */
+
+  
+  list-style: '\1F34D' inside;
+
+}
+
+
+section ul li{
+
+    border: 1px solid lightcoral;
+}

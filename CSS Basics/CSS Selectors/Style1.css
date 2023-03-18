@@ -1,0 +1,82 @@
+/* ------------------------- Element Selectors -----------------------*/
+
+/* h1 , h2 ,.. , div , scetion , header , a , table ,.. etc are the elements */
+
+h1{
+
+color: purple;
+background-color: aqua;
+border:3px solid red;
+text-align: center;
+
+}
+
+
+/* ----------------------- ID Selectors ---------------------------*/
+
+#special{
+
+    color : purple;
+    text-decoration: underline;
+    background-color: aquamarine;
+    font-size: 24px;
+
+}
+
+
+/* ------------------------ Class Selectors ----------------------*/
+
+.one{
+
+    color : green;
+    background-color: yellowgreen;
+    font-size: small;
+    font-weight: bold;
+}
+
+.two{
+
+    font-size: 24px;
+    color:palevioletred;
+}
+
+.three{
+
+    border: 5px solid blue;
+}
+
+/* -------------- Attribute Selectors -------------------*/
+
+/* Selecting attribute of type text */
+
+input[type = "text"]{
+
+    background-color: green;
+    
+}
+
+
+/* anchor tag main se woh attribute select karo jisme href = "http://google.com" likha hain */
+
+a[href = "http://google.com"]{
+
+    font-weight: bold;
+    color : red;
+    font-size : 44px;
+
+}
+
+
+
+
+/* ----------------------------- Universal Selector ---------------------------- */
+
+
+/* Removing default margin */
+
+*{
+
+    /* border : 1px solid grey; */
+    margin: 0px;
+    padding: 0px;
+}

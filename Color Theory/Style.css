@@ -1,0 +1,51 @@
+div{
+
+    border: 3px solid black;
+    height: 200px;
+    
+}
+
+
+/* Providing a Hexadecimal Color 
+
+-----> ee means more content is of red
+
+*/
+
+div:nth-of-type(1){
+
+     background-color: #ee2211;
+
+}
+
+
+/* ----------------------- Rgb ---------------------- */
+
+/* rgb(0 to 255 , 0 to 255 , 0 to 255) */
+
+div:nth-of-type(2){
+
+    background-color: rgb(30, 230, 20);  
+
+}
+
+
+/* ---------------------- Rgba --------------------- */
+
+/* In rgba : a stands for alpha channel */
+
+/* Value of alpha channel goes from 0 to 1 */
+/* 0 means Transparent */
+/* 1 means Opaque */
+
+div:nth-of-type(3){
+
+    background-color: rgba(10, 20, 200,0.3);  
+
+}
+
+div:nth-of-type(4){
+
+    background-color: #0077b6;  
+
+}

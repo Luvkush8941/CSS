@@ -1,0 +1,127 @@
+/* 
+
+
+------------------------------------- Z-index --------------------------------------
+
+Maine kai saare elements ek hee axis par rakh diye toh jiss element kaa 
+Z-index sabse jaada hoga woh sabse upar hoga.
+
+
+*/
+
+
+/* 
+
+
+ ----------------------------------  Perspective ------------------------------------------
+
+Perspective : To have the 3D effects we use this property.
+
+
+It determines the distance between the z=0 plane and the user in order to give a 3-D positioned element
+some perspective.
+
+
+It should be given to the parent.
+
+*/
+
+
+/* 
+
+
+----------------------------------- backface-visibility and transform-style ---------------------------------
+
+Abhi kya ho raha hain kii hame side-a par hover karne ke baad uska back dikh raha hain.
+
+So, to remove this we use backface-visibility
+
+But this property alone cannot work. We have to use transform-style to work this.
+
+*/
+
+
+/* 
+
+Step-1 : Overlapp both the div's
+Step-2 : Hide backside of both the div's
+Step-3 : Now rotate side-b by 180deg then it's front side will be visible.
+
+
+So, when we hover on the side-a then front side of side-b will be visible.
+
+
+*/
+
+body{
+
+    perspective: 800px;
+}
+
+
+div{
+
+    height: 250px;
+    width: 400px;
+    border: 1px #ccc;
+    
+}
+
+.side-a,.side-b{
+    
+    /* Take position w.r.t wrapper  */
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.side-a{
+
+    background-color: lightcoral;
+
+    /* abb side-a upar aa jaayega */
+    z-index: 1; 
+}
+
+.side-a img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.side-b{
+
+    background-color: lightgreen;
+
+    /* Agar main side-b ko z-indx : 2 deta huun toh side-b upar aa jaayega */
+    
+    /* 
+       side-b ko ek aur baar rotate kiya isse side-b kaa abb front-dikhega. 
+       Initially dono kaa backside dikh raha tha par maine usse hidden kar diya.
+       Toh side-a kaa front dikhega. 
+       But agar main side-b ko ek aur baar rotate kar duu toh uska front dikhega.
+
+    
+    */
+    transform: rotateY(180deg);
+    
+}
+
+
+.wrapper{
+
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+    margin: 30px auto;
+
+    transform-style: preserve-3d;
+}
+
+.wrapper:hover{
+    
+    /* Dono div's rotate ho jaayengye aur unka back dikhegaa */
+    /* But maine maine abb dono kaa backface-visibility : none kar diyaa hain */
+    /* So, if i rotate side-b 180deg more then it will be visible */
+    transform: rotateY(180deg);
+}
+

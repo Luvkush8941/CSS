@@ -1,0 +1,56 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+img{
+
+    width: 350px;
+    height: 250px;
+
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+section{
+
+    border: 20px solid #ccc;
+    width: 75vw;
+    margin: 40px auto;
+    padding: 16px;
+    font-family: Arial;
+    letter-spacing: 0.12em;
+    line-height: 1.2rem;
+     
+     /* Making the page scrollable one */
+
+    /* height: 70vh;
+    overflow-y: scroll; */
+}
+
+
+h2{
+
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #1b2a5e;
+}
+
+.para{
+
+    clear: left;
+}
+
+
+/* Type CSS Tricks hr for different hr lines */
+
+hr{
+
+    margin: 20px 0px;
+    
+}

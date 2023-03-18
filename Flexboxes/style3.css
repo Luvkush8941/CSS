@@ -1,0 +1,58 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+
+/* Applying the flexbox properties*/
+
+/* If we want to arrange the elements onto the main axis then we can use the property ::after
+
+   justify-content : start;
+
+   and start is the default justify-content
+
+*/
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+
+    /* Default justification */
+    justify-content: flex-start;
+
+    /* 
+       Jab main width kam karunga window kii toh section main jo extra space hain after 5 div's will first eat up
+       aur fir content kii width kam ho rahi hain. But we don't want this, Main chahta huun kii jaise hee extra space khatam ho toh div compress nhi hona chaiye instead of this it should go to the next line.
+
+       and we can use this property of flex wrap.
+
+       div's will wrap up on the cross axis now.
+    
+     */
+    
+     /* Here content goes from top-bottom. */
+    flex-wrap: wrap;
+
+    /* We can do wrap-reverse in which content starts wrapping from bottom to top onto the cross axis.*/
+    flex-wrap: wrap-reverse;
+    
+}

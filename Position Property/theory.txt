@@ -1,0 +1,40 @@
+
+We have certain offsets :-
+1. Top
+2. Right
+3. Bottom
+4. Left
+
+
+Position can be:
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Sticky
+
+
+---------------------------------- Static ------------------------------------
+
+The element is positioned according to the normal flow of the document. The top , right , bottom , left and z-index 
+properties have no effect . This is the default value.
+
+
+----------------------------------- Relative ---------------------------------
+
+The element is positioned according to the normal flow of the document, and then offset relative to itself 
+based on the values of top,right,bottom, and left.
+
+
+
+-------------------------------------- Absolute ------------------------------
+
+The element is removed from the normal document flow, and no space is created for the element in the page layout.
+It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom , and left.
+
+
+
+------------------------------------ Fixed --------------------------------------
+
+It is positioned relative to the initial containing block established by the viewport.
+i.e positioned according to the body.

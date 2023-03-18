@@ -1,0 +1,65 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+
+/* Applying the flexbox properties*/
+
+/* If we want to arrange the elements onto the main axis then we can use the property ::after
+
+   justify-content : start;
+
+   and start is the default justify-content
+
+*/
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+    
+    /* Elements goes to the center */
+    justify-content: center;
+    
+    /* Now, the elements goes to the flex-end */
+    justify-content: flex-end;
+
+    /* Now, equal space is created in between the elements*/
+    /* Extra space is equally distributed between the elements. */
+    justify-content: space-between;
+
+    /* Now, the space between the borders also occurs */
+    justify-content: space-evenly;
+    
+
+    /* 
+       
+       div-1 left se 10px lega let's say and right se bhi 10px lega
+       Similarly, div-2 also takes 10px from left and 10px from right. Then
+       20px space is created between div-1 and div-2.
+    
+    */
+
+
+    justify-content: space-around;
+
+    
+}

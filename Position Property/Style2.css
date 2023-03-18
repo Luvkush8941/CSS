@@ -1,0 +1,28 @@
+div{
+
+    height: 50px;
+    margin: 30px;
+    border: 2px solid black;
+    background-color: palevioletred;
+    font-size: 2.5rem;
+
+
+    /* Jaise hee top 10px se jaada hoga tab position : relative hogyi
+       Aur jab jab 10px hoga top tab fixed rahega position.
+    */
+
+     /* Important:-
+
+     Jaise hee top se offset 10px hota hain tab div 1 position le leta hain fixed kii
+     Aur jaise hee 10px se jaada hota tab woh relative kii position le leta hian
+
+     Similarly, fir jab div 2 top se 10px hoga tab woh fixed ho jaayega.
+     Aur jaise hee 10px se kam hoga fir relative position le lega.
+     
+     */
+
+     /* i.e it is creating a stacking context. */
+
+    position: sticky;
+    top:10px;
+}

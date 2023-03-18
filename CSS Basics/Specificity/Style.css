@@ -1,0 +1,48 @@
+/* 
+
+What is Specificity :
+
+If there are two or more CSS rules that point to the same element, the selector with the highest 
+specificity value will "win", and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+
+*/
+
+
+
+
+/* 
+
+1. <h1 class = "one" id = "special"> This is a heading </h1>
+
+
+*/
+
+
+
+/* The class selector is given higher priority as compare to the element selector. */
+/* Since : Classes are more specific i.e green color will be applied to the h1 */
+
+
+.one{
+
+    color: green;
+    text-align: center;
+
+}
+
+h1{
+
+    color: red;
+
+}
+
+
+
+/* Id is more specific as compare to classes and elements i.e palegreen will be applied to the h1 */
+
+#special{
+
+    color: palegreen;
+}

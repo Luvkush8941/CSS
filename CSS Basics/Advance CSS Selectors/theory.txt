@@ -1,0 +1,38 @@
+/* 
+
+ ---------------------------- Advance Selectors -------------------------------
+
+ 1. Combinators :
+      a) Child Combinators
+      b) Adjacent Sibling Combinators
+      c) General Sibling Combinators
+      d) Descendent Combinators
+                
+
+
+
+                                                 Html (root)
+                                                  |
+                     --------------------------------------------------------------
+                     |                                                            |
+                    Head                               (child of Html)       Body (Parent of h1 , div ,...)
+                     |                                                            |
+               --------------                                          -------------------------
+               |             |                                         |        |              |  
+              Title         Link                                      h1       div             p           
+                     (Title and link)                              (Child)      |              |   
+                        are siblings                                            ul        -----------
+                                                                                |         |         |
+                                                                            ------------ strong     em
+                                                                            |    |     |
+                                                                           li    li    li           
+                                                                       (descendent of body)
+
+
+
+
+
+
+
+
+*/

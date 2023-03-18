@@ -1,0 +1,131 @@
+
+
+/* Giving size to the parent */
+article{
+   
+    font-size: 100px;
+
+}
+
+/* ------------------------ % unit -------------------------- */
+
+/* It is generally used for dimensions. */
+/* It is relative to it's parent. */
+
+/* ul has 50 % of it's parent size.
+
+i.e initially article has 100px size so, first ul  has a size of 50% of article i.e 50px.
+Similarly, next ul has the size of 50% of the previous ul i.e 25px.
+and last ul has the size of 50% of previous ul i.e 12.5px
+
+*/
+
+
+article ul{
+
+    font-size: 50%;
+}
+
+section:nth-of-type(1){
+
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+section:nth-of-type(1) div{
+
+    height: 50%; /* 50px */
+    width: 60%; /*  60px */
+    border : 2px solid red;
+    background-color: aqua;
+    
+    /* height: 100%;
+    width: 100%;
+    box-sizing: border-box; */
+}
+
+
+
+/* -------------------------- em unit ----------------------------- */
+
+/* Generally used for font-size */
+
+/* Giving size to the parent */
+section:nth-of-type(2){
+
+    font-size: 20px;
+    
+}
+
+
+/* 2em means 2times the size of the parent */
+/* 
+i.e first ul will have a size of 2*20px i.e 40px
+second ul will have a size of 2*40px i.e 80px
+third ul will have a size of 2*80px i.e 160px
+
+We will get a Snow bolling effect.
+
+*/
+section:nth-of-type(2) ul{
+
+    font-size: 2em;
+}
+
+
+
+/* -------------------------- rem unit -------------------------------- */
+
+/* Generally used for font-size */
+
+/* It means relative to root element */
+
+/* rem ko kisi se matlab nhi hain it will take size w.r.t html(root element) */
+
+/* and default size of html is 16px. */
+
+/* i.e size of ul will be 2*16px i.e 32px. */
+/* 
+All the ul will take size w.r.t html
+   i.e all have 32px size.
+*/
+
+section:nth-of-type(3) ul{
+
+    font-size: 2rem;
+}
+
+
+/* -------------------------------- vh and vw ---------------------------------- */
+
+/* Generally used for dimensions */
+
+/* 
+
+Current full screen is our viewport.
+
+height: 40vh; --> means 40% height of the viewport will be assigned to this section
+
+
+width: 70vw; --> means 70% width of the viewport will be assigned to this section
+
+
+
+*/
+
+
+section:nth-of-type(4) {
+
+    height: 40vh;
+    width: 70vw;
+
+    background-color: palevioletred;
+
+    border: 1px solid #ccc;
+}
+
+
+
+
+

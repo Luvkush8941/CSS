@@ -1,0 +1,38 @@
+                                              
+
+  Note : A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.      
+
+  There are two types of length units : Absolute and Relative.
+
+  1. Absolute : length units are fixed and a length expressed in any of these will appear as exactly that size. Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.                                            
+                                              
+                                              
+                                              
+                                              CSS Units
+                                                  |
+                -----------------------------------------------------------------------
+                |                                                                    |
+            Absolute                                                     Relative    
+
+          ---> Pixel                                                          ----> %
+          ---> centimeter(cm)                                                 ----> em
+          ---> mm                                                          ---->rem 
+          ---> inches                                                         ----> vh (view height)
+                                                                              ----> vw (view width)
+                                                                              ----> ex
+
+---> Pixels (px) are relative to the viewing device.
+
+---> em : Relative to the font size of the element (2em means 2 times the size of the current font.)
+
+---> ex : Relative to the x-height of the current font
+
+---> rem : Relative to font-size of the root element.
+
+---> vw : Relative to 1% of the width of the viewport*.
+
+---> vh : Relative to 1% of the height of the viewport*.
+
+---> % : Relative to the parent element.
+
+                                                                        

@@ -1,0 +1,60 @@
+h1{
+
+    text-align: center;
+}
+
+div{
+
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 30px;
+    
+}
+
+
+
+/* Applying the flexbox properties*/
+
+section{
+
+    width: 75vw;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    background-color: blue;
+
+    /* Applying the flexbox on this section */
+    display: flex;
+
+    /* Default justification */
+    justify-content: flex-start;
+    
+     /* Here content goes from top-bottom. */
+    flex-wrap: wrap;
+    
+
+    /* Abhi tak hamne justify-content dekha on the main axis i.e elements our arranging on the main axis.
+    
+       But, now we are going to arrange the elements on the cross axis also.
+
+       For, this we use align-items property.
+
+       align-items : stretch; --------> Default property
+
+       If we remove the height of the div's then by default they'll be stretch on the cross axis covering the whole 
+       section.
+
+    */
+
+    align-items: center;
+
+    align-items: flex-end;
+
+    align-items: flex-start;
+    
+    /* Remove the height of the div's to see this property. */
+    align-items: stretch;
+
+}

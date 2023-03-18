@@ -1,0 +1,76 @@
+/* --------------------------- Descendent Combinators ---------------------------*/
+
+/* Div ke woh sabhi vansaj jin jin ke para par strong tag laga hain unn kaa color red ho jaaye. */
+
+div p strong{
+
+    color: red;
+    background-color: yellow;
+
+}
+
+
+p strong{
+
+    color : #800080;
+    background-color: aqua;
+
+}
+
+li a[href = "http://google.com"]{
+
+    color : green;
+    background-color: palevioletred;
+
+}
+
+
+/* -------------------- Child Combinators -----------------------*/
+
+/* ol tag ke andarr jo immediate child hain i.e immdiate li hain woh hee select ho bass */
+
+ol > li{
+
+    border-top: 3px solid red;
+}
+
+
+/* ---------------------- Adjacent Sibling Combinators ------------------------- */
+
+/* h4 ke adjacent jo paragraph hain unhe select karlo */
+/* So, h4 ke forward direction main jo adjacent paragraph hoga woh select ho jaayega */
+
+h4 + p{
+
+    background-color: lightgreen;
+}
+
+/* h4 + p + p{
+
+    background-color: lightgreen;
+
+} */
+
+
+
+/* -------------------- General Sibling Combinators -------------------------- */
+/* Imp : Works in forward direction */
+
+/* In the section element general siblings of div are : 
+  1. p
+  2. ul
+  3. p
+  4. span
+  5. p
+  6. p
+
+
+*/
+
+/* Selecting those paragraphs which are general siblings of div */
+/* Combination of descendent and general sibling combinators */
+
+section div ~ p{
+
+    text-decoration: line-through;
+}
